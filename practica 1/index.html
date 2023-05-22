@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Holiiiiiiiiiiiiiiiiiiiiiiiiiii</h1>
+    <button id="red">Rojo</button>
+    <button id="blue">Azul</button>
+    <button id="green">Verde</button>
+    <button id="pink">Rosa</button>
+    <button id="yellow">Amarillo</button>
+</body>
+<script>
+    const title = document.getElementById('title');
+    const red = document.getElementById('red');
+    const blue = document.getElementById('blue');
+    const green = document.getElementById('green');
+    const pink = document.getElementById('pink');
+    const yellow= document.getElementById('yellow');
+                                       //('Va el ID que pusimos al elemento')
+                                       
+
+    // addEventListener sirve para registrar cuando demos clic a un botón
+    red.addEventListener('click', () => {
+        title.style.color = 'red'; //Este es css, se le da un estilo que en este caso es el color rojo
+    });
+
+    blue.addEventListener('click', () => {
+        title.style.color = 'blue';
+    });
+
+    green.addEventListener('click', () => {
+        title.style.color = 'green';
+    });
+
+    pink.addEventListener('click', () => {
+        title.style.color = 'pink';
+    });
+
+    yellow.addEventListener('click', () => {
+        title.style.color = 'yellow';
+    });
+</script>
+</html>
