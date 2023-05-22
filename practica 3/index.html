@@ -11,6 +11,14 @@
     <h1>Presional Ctrl + Enter para que la página sea de color rojo</h1>
 </body>
 <script>
-    
+    window.addEventListener("keydown", function(e) {
+        if(e.key == "Enter") {
+            document.body.style.backgroundColor = "black";
+        }
+        if(e.key == "Enter" && e.ctrlKey) {
+            document.body.style.backgroundColor = "red";
+
+        }
+    })
 </script>
 </html>
