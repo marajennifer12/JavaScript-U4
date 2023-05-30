@@ -60,6 +60,19 @@
 </body>
 <script>
     const modal = document.getElementById("modal");
-    const button = document.getElementsByTagName('button')[0]
+    const button = document.getElementsByTagName('button')[0];
+    const close = document.getElementsByClassName("close")[0];
+    const modalImage = document.getElementById("modal-image");
+
+    button.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImage.src = "img/kazuhaaaa.jpg";
+
+
+    });
+
+    close.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
 </script>
 </html>
