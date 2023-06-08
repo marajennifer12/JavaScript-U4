@@ -30,8 +30,8 @@ function formatSearchString(search) {
 }
 
 function buildUrl (search) {
-  const API_KEY = ''; // llave de GIPHY
-  const baseUrl = 'https://giphy.com/channel/marajenniferlpezlemus?loginType=facebook_signup';
+  const API_KEY = 'PMBUpuaj3teq6I6sx3mV6DNlO6znGVfC'; // llave de GIPHY
+  const baseUrl = 'https://api.giphy.com/v1/gifs/search';
 
   return `${baseUrl}?q=${search}&api_key=${API_KEY}&limit=9`;
 }

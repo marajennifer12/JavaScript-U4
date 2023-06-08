@@ -1,0 +1,39 @@
+ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 5px 5px 5px 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 0px;
+    transform: translate(50%, -50%);
+} /**/
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    
+    background-image: url(img/checked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 0px;
+    transform: translate(50%, -50%);
+}
+
+span {
+    margin-left: 2%;
+}
